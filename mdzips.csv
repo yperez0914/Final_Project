@@ -1,0 +1,445 @@
+﻿OBJECTID,ZIPCODE1,ZIPName
+445,20601,Waldorf
+446,20602,Waldorf
+447,20603,Waldorf
+448,20606,Abell
+449,20607,Accokeek
+450,20608,Aquasco
+451,20609,Avenue
+452,20611,Bel Alton
+453,20612,Benedict
+454,20613,Brandywine
+455,20615,Broomes Island
+456,20616,Bryans Road
+457,20617,Bryantown
+458,20618,Bushwood
+459,20619,California
+460,20620,Callaway
+461,20621,Chaptico
+462,20622,Charlotte Hall
+463,20623,Cheltenham
+464,20624,Clements
+465,20625,Cobb Island
+466,20626,Coltons Point
+467,20628,Dameron
+468,20629,Dowell
+469,20630,Drayden
+470,20632,Faulkner
+471,20634,Great Mills
+472,20636,Hollywood
+473,20637,Hughesville
+474,20639,Huntingtown
+475,20640,Indian Head
+476,20645,Issue
+477,20646,La Plata
+478,20650,Leonardtown
+479,20653,Lexington Park
+480,20656,Loveville
+481,20657,Lusby
+482,20658,Marbury
+483,20659,Mechanicsville
+484,20662,Nanjemoy
+485,20664,Newburg
+486,20667,Park Hall
+487,20670,Patuxent River
+488,20674,Piney Point
+489,20675,Pomfret
+490,20676,Port Republic
+491,20677,Port Tobacco
+492,20678,Prince Frederick
+493,20680,Ridge
+494,20684,Saint Inigoes
+495,20685,Saint Leonard
+496,20687,Scotland
+497,20688,Solomons
+498,20689,Sunderland
+499,20690,Tall Timbers
+500,20692,Valley Lee
+501,20693,Welcome
+502,20695,White Plains
+503,20701,Annapolis Junction
+504,20705,Beltsville
+505,20706,Lanham
+506,20707,Laurel
+507,20708,Laurel
+508,20710,Bladensburg
+509,20711,Lothian
+510,20712,Mount Rainier
+511,20714,North Beach
+512,20715,Bowie
+513,20716,Bowie
+514,20720,Bowie
+515,20721,Bowie
+516,20722,Brentwood
+517,20723,Laurel
+518,20724,Laurel
+519,20732,Chesapeake Beach
+520,20733,Churchton
+521,20735,Clinton
+522,20736,Owings
+523,20737,Riverdale
+524,20740,College Park
+525,20742,College Park
+526,20743,Capitol Heights
+527,20744,Fort Washington
+528,20745,Oxon Hill
+529,20746,Suitland
+530,20747,District Heights
+531,20748,Temple Hills
+532,20751,Deale
+533,20754,Dunkirk
+534,20755,Fort George G Meade
+535,20758,Friendship
+536,20759,Fulton
+537,20762,Andrews Air Force Base
+538,20763,Savage
+539,20764,Shady Side
+540,20765,Galesville
+541,20769,Glenn Dale
+542,20770,Greenbelt
+543,20771,Greenbelt
+544,20772,Upper Marlboro
+545,20774,Upper Marlboro
+546,20776,Harwood
+547,20777,Highland
+548,20778,West River
+549,20779,Tracys Landing
+550,20781,Hyattsville
+551,20782,Hyattsville
+552,20783,Hyattsville
+553,20784,Hyattsville
+554,20785,Hyattsville
+555,20794,Jessup
+556,20812,Glen Echo
+557,20814,Bethesda
+558,20815,Chevy Chase
+559,20816,Bethesda
+560,20817,Bethesda
+561,20818,Cabin John
+562,20832,Olney
+563,20833,Brookeville
+564,20837,Poolesville
+565,20838,Barnesville
+566,20839,Beallsville
+567,20841,Boyds
+568,20842,Dickerson
+569,20850,Rockville
+570,20851,Rockville
+571,20852,Rockville
+572,20853,Rockville
+573,20854,Potomac
+574,20855,Derwood
+575,20860,Sandy Spring
+576,20861,Ashton
+577,20862,Brinklow
+578,20866,Burtonsville
+579,20868,Spencerville
+580,20871,Clarksburg
+581,20872,Damascus
+582,20874,Germantown
+583,20876,Germantown
+584,20877,Gaithersburg
+585,20878,Gaithersburg
+586,20879,Gaithersburg
+587,20880,Washington Grove
+588,20882,Gaithersburg
+589,20886,Montgomery Village
+590,20889,Bethesda
+591,20892,Bethesda
+592,20894,Bethesda
+593,20895,Kensington
+594,20896,Garrett Park
+595,20899,Gaithersburg
+596,20901,Silver Spring
+597,20902,Silver Spring
+598,20903,Silver Spring
+599,20904,Silver Spring
+600,20905,Silver Spring
+601,20906,Silver Spring
+602,20910,Silver Spring
+603,20912,Takoma Park
+604,21001,Aberdeen
+605,21005,Aberdeen Proving Ground
+606,21009,Abingdon
+607,21010,Gunpowder
+608,21012,Arnold
+609,21013,Baldwin
+610,21014,Bel Air
+611,21015,Bel Air
+612,21017,Belcamp
+613,21028,Churchville
+614,21029,Clarksville
+615,21030,Cockeysville
+616,21031,Hunt Valley
+617,21032,Crownsville
+618,21034,Darlington
+619,21035,Davidsonville
+620,21036,Dayton
+621,21037,Edgewater
+622,21040,Edgewood
+623,21042,Ellicott City
+624,21043,Ellicott City
+625,21044,Columbia
+626,21045,Columbia
+627,21046,Columbia
+628,21047,Fallston
+629,21048,Finksburg
+630,21050,Forest Hill
+631,21051,Fork
+632,21053,Freeland
+633,21054,Gambrills
+634,21056,Gibson Island
+635,21057,Glen Arm
+636,21060,Glen Burnie
+637,21061,Glen Burnie
+638,21071,Glyndon
+639,21074,Hampstead
+640,21075,Elkridge
+641,21076,Hanover
+642,21077,Harmans
+643,21078,Havre De Grace
+644,21082,Hydes
+645,21084,Jarrettsville
+646,21085,Joppa
+647,21087,Kingsville
+648,21090,Linthicum Heights
+649,21093,Lutherville Timonium
+650,21102,Manchester
+651,21104,Marriottsville
+652,21108,Millersville
+653,21111,Monkton
+654,21113,Odenton
+655,21114,Crofton
+656,21117,Owings Mills
+657,21120,Parkton
+658,21122,Pasadena
+659,21128,Perry Hall
+660,21131,Phoenix
+661,21132,Pylesville
+662,21133,Randallstown
+663,21136,Reisterstown
+664,21140,Riva
+665,21144,Severn
+666,21146,Severna Park
+667,21152,Sparks Glencoe
+668,21153,Stevenson
+669,21154,Street
+670,21155,Upperco
+671,21156,Upper Falls
+672,21157,Westminster
+673,21158,Westminster
+674,21160,Whiteford
+675,21161,White Hall
+676,21162,White Marsh
+677,21163,Woodstock
+678,21201,Baltimore
+679,21202,Baltimore
+680,21204,Towson
+681,21205,Baltimore
+682,21206,"Baltimore, Raspeburg"
+683,21207,Gwynn Oak
+684,21208,Pikesville
+685,21209,"Baltimore, Mt Washington"
+686,21210,"Baltimore, Roland Park"
+687,21211,Baltimore
+688,21212,"Baltimore, Govans"
+689,21213,Clifton
+690,21214,Baltimore
+691,21215,"Arlington, Baltimore"
+692,21216,Baltimore
+693,21217,Druid
+694,21218,Baltimore
+695,21219,Sparrows Point
+696,21220,Middle River
+697,21221,Essex
+698,21222,Dundalk
+699,21223,Franklin
+700,21224,"Baltimore, Highlandtown"
+701,21225,Brooklyn
+702,21226,Curtis Bay
+703,21227,Halethorpe
+704,21228,Catonsville
+705,21229,"Baltimore, Carroll"
+706,21230,Morrell Park
+707,21231,Baltimore
+708,21234,Parkville
+709,21235,Baltimore
+710,21236,Nottingham
+711,21237,Rosedale
+712,21239,"Baltimore, Northwood"
+713,21240,BWI Airport
+714,21241,Baltimore
+715,21244,Windsor Mill
+716,21250,Baltimore
+717,21251,Baltimore
+718,21252,Baltimore
+719,21286,Towson
+720,21287,Baltimore
+721,21401,Annapolis
+722,21402,Naval Academy
+723,21403,Eastport
+724,21405,Sherwood Forest
+725,21409,Annapolis
+726,21502,Cumberland
+727,21520,Accident
+728,21521,Barton
+729,21522,Bittinger
+730,21523,Bloomington
+731,21530,Flintstone
+732,21531,Friendsville
+733,21532,Frostburg
+734,21536,Grantsville
+735,21538,Kitzmiller
+736,21539,Lonaconing
+737,21540,Luke
+738,21541,McHenry
+739,21545,Mount Savage
+740,21550,Oakland
+741,21555,Oldtown
+742,21557,Rawlings
+743,21561,Swanton
+744,21562,Westernport
+745,21601,Easton
+746,21607,Barclay
+747,21610,Betterton
+748,21612,Bozman
+749,21613,Cambridge
+750,21617,Centreville
+751,21619,Chester
+752,21620,Chestertown
+753,21622,Church Creek
+754,21623,Church Hill
+755,21625,Cordova
+756,21626,Crapo
+757,21627,Crocheron
+758,21629,Denton
+759,21631,East New Market
+760,21632,Federalsburg
+761,21634,Fishing Creek
+762,21635,Galena
+763,21636,Goldsboro
+764,21638,Grasonville
+765,21639,Greensboro
+766,21640,Henderson
+767,21643,Hurlock
+768,21644,Ingleside
+769,21645,Kennedyville
+770,21647,McDaniel
+771,21648,Madison
+772,21649,Marydel
+773,21650,Massey
+774,21651,Millington
+775,21652,Neavitt
+776,21654,Oxford
+777,21655,Preston
+778,21657,Queen Anne
+779,21658,Queenstown
+780,21659,Rhodesdale
+781,21660,Ridgely
+782,21661,Rock Hall
+783,21662,Royal Oak
+784,21663,Saint Michaels
+785,21665,Sherwood
+786,21666,Stevensville
+787,21667,Still Pond
+788,21668,Sudlersville
+789,21669,Taylors Island
+790,21671,Tilghman
+791,21672,Toddville
+792,21673,Trappe
+793,21675,Wingate
+794,21676,Wittman
+795,21677,Woolford
+796,21678,Worton
+797,21679,Wye Mills
+798,21701,Frederick
+799,21702,Frederick
+800,21703,Frederick
+801,21704,Frederick
+802,21710,Adamstown
+803,21711,Big Pool
+804,21713,Boonsboro
+805,21716,Brunswick
+806,21718,Burkittsville
+807,21719,Cascade
+808,21722,Clear Spring
+809,21723,Cooksville
+810,21727,Emmitsburg
+811,21733,Fairplay
+812,21737,Glenelg
+813,21738,Glenwood
+814,21740,Hagerstown
+815,21742,Hagerstown
+816,21750,Hancock
+817,21754,Ijamsville
+818,21755,Jefferson
+819,21756,Keedysville
+820,21757,Keymar
+821,21758,Knoxville
+822,21766,Little Orleans
+823,21767,Maugansville
+824,21769,Middletown
+825,21770,Monrovia
+826,21771,Mount Airy
+827,21773,Myersville
+828,21774,New Market
+829,21776,New Windsor
+830,21777,Point of Rocks
+831,21778,Rocky Ridge
+832,21779,Rohrersville
+833,21780,Sabillasville
+834,21782,Sharpsburg
+835,21783,Smithsburg
+836,21784,Sykesville
+837,21787,Taneytown
+838,21788,Thurmont
+839,21790,Tuscarora
+840,21791,Union Bridge
+841,21793,Walkersville
+842,21794,West Friendship
+843,21795,Williamsport
+844,21797,Woodbine
+845,21798,Woodsboro
+846,21801,Salisbury
+847,21804,Salisbury
+848,21811,Berlin
+849,21813,Bishopville
+850,21814,Bivalve
+851,21817,Crisfield
+852,21821,Deal Island
+853,21822,Eden
+854,21824,Ewell
+855,21826,Fruitland
+856,21829,Girdletree
+857,21830,Hebron
+858,21835,Linkwood
+859,21837,Mardela Springs
+860,21838,Marion Station
+861,21840,Nanticoke
+862,21841,Newark
+863,21842,Ocean City
+864,21849,Parsonsburg
+865,21850,Pittsville
+866,21851,Pocomoke City
+867,21853,Princess Anne
+868,21856,Quantico
+869,21862,Showell
+870,21863,Snow Hill
+871,21864,Stockton
+872,21865,Tyaskin
+873,21869,Vienna
+874,21871,Westover
+875,21872,Whaleyville
+876,21874,Willards
+877,21875,Delmar
+878,21890,Westover
+879,21901,North East
+880,21903,Perryville
+881,21904,Port Deposit
+882,21911,Rising Sun
+883,21912,Warwick
+884,21915,Chesapeake City
+885,21917,Colora
+886,21918,Conowingo
+887,21919,Earleville
+888,21921,Elkton
