@@ -1,8 +1,17 @@
 from flask import Flask, render_template
 import pymongo
+import pandas as pd 
+import requests
+import json
+from config import YP_API_KEY
 
 app = Flask(__name__)
 
+#create function for API call in route
+@app.route("/")
+def index():
+
+    return jsonify()
 # setup mongo connection
 conn = "mongodb://localhost:27017"
 client = pymongo.MongoClient(conn)
@@ -10,10 +19,9 @@ client = pymongo.MongoClient(conn)
 # connect to mongo db and collection
 db = client.store_inventory
 produce = db.produce
-
-
-@app.route("/")
-def index():
+@app.route("/predictions")
+def mlearn():
+    
     # write a statement that finds all the items in the db and sets it to a variable
     inventory = list(produce.find())
     print(inventory)
