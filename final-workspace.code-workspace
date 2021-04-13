@@ -2,9 +2,6 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "..\\..\\MongoDB\\12.3 - Web-Scraping-and-Document-Databases\\Activities"
 		}
 	],
 	"settings": {}
