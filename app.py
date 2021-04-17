@@ -6,7 +6,7 @@ import requests
 import json
 from config import lw_key
 from dateutil.relativedelta import relativedelta
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from sklearn.svm import SVC 
 from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import MinMaxScaler
@@ -19,16 +19,28 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/forecast_db"
 mongo = PyMongo(app)
 url= "https://api.worldweatheronline.com/premium/v1/weather.ashx?"
 past_url = "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?"
-zipcode = input("Enter 5-digit Zipcode:")
 
-@app.route("/predictions")
+
+# Route for home page
+"""
+Returns HTML with JS that takes in zipcode/dates
+and feeds them to next route
+"""
+
+
+# Route that intakes dates and zipcodes
+"""
+Historical weather and migraine history, combine
+them into a df, store that df in mongo
+"""
+@app.route("/history_load")
 def history():
+    zipcode = input("Enter 5-digit Zipcode:")
     dates= input("Dates you had a migraine (YYYY-MM-DD):")
     dates=dates.split(",")
     dates= [i.strip() for i in dates]
     dates_df = pd.DataFrame(dates,columns=['Dates'])
     dates_df["Migraine"] = 1
-
     history_dict ={
     "Dates":[],
     "Cloudcover":[],
@@ -73,18 +85,26 @@ def history():
     history_df= pd.merge(history_df,dates_df, on = 'Dates', how = 'left')
     history_df= history_df.fillna(0)
     history_df= history_df.iloc[1:]
-    return "History pulled"
-
-def mongoDB():
-    history()
+    # history_data = json.loads(history_df.to_json(orient = "records"))
     collection = mongo.db.history
-    collection.insert_one(responses)
+    history_df.reset_index(inplace=True)
+    data_dict = history_df.to_dict("records")
+    collection.insert_many(data_dict)
     print("Data inserted")
     return "Data inserted"
-
-def forecast_call():
+# Route to show second page (forecast)
+"""
+HTML and JS that loads data from the next route
+"""
+# Route to load data, perform ML, give predictions
+"""
+Import data from Mongo, perform ML, make predictions
+return JSONIFIED data with weather, predictions, and anything else.
+"""
+@app.route("/predictions")
+def forecast_call_ml():
     # url= "https://api.worldweatheronline.com/premium/v1/weather.ashx?"
-    # zipcode = input("Enter 5-digit Zipcode:")
+    zipcode = input("Enter 5-digit Zipcode:")
     response = requests.get(f"{url}key={lw_key}&q={zipcode}&num_of_days=7&tp=24&mca=no&aqi=yes&format=json").json()
     response = response["data"]
     weather_dict ={
@@ -122,11 +142,8 @@ def forecast_call():
     new_migraine_df = weather_df.drop("Dates", axis =1)
 
     forecast_data = json.loads(weather_df.to_json(orient = "records"))
-    return forecast_data
-def m_learn():
-    #use history function
-    history()
-    forecast_call()
+    #Pull data from MongoDB
+    history_df = list(history.find())
     #Pre-Processing of Data
     hist_ml_df=history_df.drop(columns =["Dates"])
     # Assign X (data) and y (target)
@@ -164,7 +181,7 @@ def m_learn():
 
     # render an index.html template and pass it the data you retrieved from the database
     return "We did it! Machine learning achieved!"
-    # return render_template("results_index.html", forecast_predictions = forecast_predictions)
+    # return render_template("results_index.html", forecast_predictions = forecast_predictions, forecast_data = forecast_data)
 
 if __name__ == "__main__":
     app.run(debug=True)
