@@ -28,7 +28,7 @@ Returns HTML with JS that takes in zipcode/dates and feeds them to next route
 @app.route("/")
 def home():
     return render_template("index.html")
-    
+     
 
 #Route that intakes and zips
 """
