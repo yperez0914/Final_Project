@@ -142,6 +142,7 @@ def forecast_call_ml():
     new_migraine_df = weather_df.drop("Dates", axis =1)
 
     forecast_data = json.loads(weather_df.to_json(orient = "records"))
+   
     #Pull data from MongoDB
     collection = mongo.db.history
     history_df = pd.DataFrame(list(collection.find()))
@@ -158,8 +159,8 @@ def forecast_call_ml():
     X_scaler.get_params()
     X_train_scaled = X_scaler.transform(X_train)
     X_test_scaled = X_scaler.transform(X_test)
-    print("y_train value counts: {y_train.value_counts}")
-    print("y_test value counts: {y_test.value_counts}")
+    print(f"y_train value counts: {y_train.value_counts}")
+    print(f"y_test value counts: {y_test.value_counts}")
     #Model creation
     model = SVC(kernel="linear")
     # Create the GridSearch estimator along with a parameter object containing the values to adjust
@@ -172,16 +173,19 @@ def forecast_call_ml():
     print(grid.best_params_)
     # List the best score
     print(grid.best_score_)
-    print("'Test Acc: %.3f' % model.score({X_test_scaled}, {y_test}")
+    # print(grid.score({X_test_scaled}, {y_test}))
     #Use model to make predictions with the hypertuned model
     predictions = grid.predict(X_test_scaled)
     # Run model on forecast data to formulate predictions
     X_new_scaled =X_scaler.transform(new_migraine_df)
     forecast_predictions = grid.predict(X_new_scaled)
-    print("forecast_predictions{forecast_predictions}")
+    print(f"`forecast_predictions{forecast_predictions}")
+    lists = forecast_predictions.tolist()
+    json_str = json.dumps(lists)
+    print("Predictions inserted")
 
     # render an index.html template and pass it the data you retrieved from the database
-    return "We did it! Machine learning achieved!"
+    return (f"We did it! Machine learning achieved! {forecast_data} {json_str}")
     # return render_template("results_index.html", forecast_predictions = forecast_predictions, forecast_data = forecast_data)
 
 if __name__ == "__main__":
