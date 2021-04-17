@@ -143,9 +143,10 @@ def forecast_call_ml():
 
     forecast_data = json.loads(weather_df.to_json(orient = "records"))
     #Pull data from MongoDB
-    history_df = list(history.find())
+    collection = mongo.db.history
+    history_df = pd.DataFrame(list(collection.find()))
     #Pre-Processing of Data
-    hist_ml_df=history_df.drop(columns =["Dates"])
+    hist_ml_df= history_df.drop(columns =["Dates","_id","index"])
     # Assign X (data) and y (target)
     X = hist_ml_df.drop("Migraine", axis=1)
     y = hist_ml_df["Migraine"]
