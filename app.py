@@ -26,6 +26,9 @@ past_url = "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?"
 Returns HTML with JS that takes in zipcode/dates
 and feeds them to next route
 """
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 
 # Route that intakes dates and zipcodes
@@ -33,10 +36,11 @@ and feeds them to next route
 Historical weather and migraine history, combine
 them into a df, store that df in mongo
 """
-@app.route("/history_load")
-def history():
-    zipcode = input("Enter 5-digit Zipcode:")
-    dates= input("Dates you had a migraine (YYYY-MM-DD):")
+@app.route("/userdata/<dates>/<zipcode>")
+def createUser(dates, zipcode):
+    id = uuid.uuid4()
+    zipcode = zipcode
+    dates= dates
     dates=dates.split(",")
     dates= [i.strip() for i in dates]
     dates_df = pd.DataFrame(dates,columns=['Dates'])
